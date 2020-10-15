@@ -69,6 +69,7 @@ export function mergeList(userArr, paceArr, option) {
         Object.assign(x, { average_pace: x.distance / 1000 / x.total_time });
       });
 
+
       if (option == "Average Pace") {
         arr3.forEach((element) => {
           arr3.sort((a, b) => (a.average_pace > b.average_pace ? 1 : -1));
@@ -76,7 +77,8 @@ export function mergeList(userArr, paceArr, option) {
       }
       if (option == "Distance") {
         arr3.forEach((element) => {
-          arr3.sort((a, b) => (a.distance > b.distance ? 1 : -1));
+          console.log(element.distance);
+          arr3.sort((a, b) => (Number(a.distance) > Number(b.distance) ? 1 : -1));
         });
       }
       if (option == "Total Time") {

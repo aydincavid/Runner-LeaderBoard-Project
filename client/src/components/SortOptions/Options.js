@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Card, ListGroup, ListGroupItem, CardText } from "reactstrap";
+import { Card, ListGroup, ListGroupItem, CardText, Button, ButtonGroup } from "reactstrap";
 import * as actionTypes from "../../redux/actions/optionsActions";
 import { bindActionCreators } from "redux";
 import * as userActions from "../../redux/actions/userActions";
@@ -28,19 +28,22 @@ class Options extends Component {
   render() {
     return (
       <div>
-        <ListGroup style={{ marginTop: "1rem" }}>
+        <h4 style={{marginTop:"1rem" , textAlign:"center"}}  >Choose Sort Option </h4>
+        <ButtonGroup style={{ marginTop: "1rem"}}>
           {this.props.OptionList.map((option) => (
-            <ListGroupItem
+            <Button
+            
               key={option.id}
               active={option === this.props.currentOption}
               onClick={() => this.changeOption(option)}
+              color="primary"
             >
               {option}
-            </ListGroupItem>
+            </Button>
           ))}
-        </ListGroup>
+        </ButtonGroup>
 
-        <Card body inverse color="success" style={{ margin: "1rem 0rem" }}>
+        <Card body inverse color="success" style={{ marginTop: "3rem" }}>
           <CardText>Runners between 20 and 30 years old</CardText>
         </Card>
 

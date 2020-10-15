@@ -24,14 +24,14 @@ export default class Navi extends Component {
             <NavbarBrand href="/">Herogi</NavbarBrand>
 
             <Collapse navbar>
-              <Nav className="mr-auto" navbar>
+              <Nav style={{fontSize:"1.3rem"}} className="mr-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://github.com/aydincavid/Runner-LeaderBoard-Project">
+                  <NavbarBrand  href="https://github.com/aydincavid/Runner-LeaderBoard-Project">
                     GitHub
-                  </NavLink>
+                  </NavbarBrand>
                 </NavItem>
               </Nav>
-              <NavbarText>Runner Leaderboard</NavbarText>
+              <NavbarText style={{fontSize : "1.3rem"}}>Runner Leaderboard</NavbarText>
             </Collapse>
           </Navbar>
         </div>

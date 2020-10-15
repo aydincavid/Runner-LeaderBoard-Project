@@ -26,7 +26,7 @@ export default class Navi extends Component {
             <Collapse navbar>
               <Nav className="mr-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
+                  <NavLink href="https://github.com/aydincavid/Runner-LeaderBoard-Project">
                     GitHub
                   </NavLink>
                 </NavItem>

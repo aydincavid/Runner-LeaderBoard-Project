@@ -1,0 +1,7 @@
+export const CHANGE_SORT_OPTION = "CHANGE_SORT_OPTION";
+export const GET_USERS_SUCCESS = "GET_USERS_SUCCESS";
+export const GET_PACES_SUCCESS = "GET_PACES_SUCCESS";
+export const LIST_OPTIONS = "LIST_OPTIONS";
+export const MERGE_LIST = "MERGE_LIST";
+
+
